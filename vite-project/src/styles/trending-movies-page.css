@@ -1,0 +1,36 @@
+.toggle-time-window {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  margin: 20px auto;
+  border-radius: 5px;
+  outline: 1px solid var(--primary-color);
+  font-size: 20px;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.choosed {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  padding: 5px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  pointer-events: none;
+  transition: 300ms;
+}
+.day {
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+  transition: 300ms;
+  z-index: 1;
+}
+.week {
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+  z-index: 1;
+  transition: 400ms;
+}

@@ -1,0 +1,27 @@
+.filter-form {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.filter-section {
+  margin: 20px 0;
+}
+
+.filter-section-title {
+  margin-bottom: 10px;
+}
+
+.filter-genre-item {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #fffff8;
+}
+
+.filter-genre-item.active {
+  color: #fff;
+  background-color: #243f4d;
+}

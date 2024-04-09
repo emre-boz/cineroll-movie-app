@@ -1,0 +1,16 @@
+.error-page-image {
+  width: 100%;
+}
+.error-page-btn {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.error-page-info {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.error-page-info * {
+  margin: 6px 0;
+}

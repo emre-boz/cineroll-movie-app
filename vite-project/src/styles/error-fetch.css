@@ -1,0 +1,19 @@
+.error-fetch {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+    background-color: var(--secondary-color);
+    z-index: 141;
+}
+
+.error-fetch-image {
+    width: clamp(288px, calc(100vw - 600px), 500px);
+}
+
+.error-fetch-info {
+    font-size: clamp(18px, 3vw, 30px);
+    padding: 10px;
+}

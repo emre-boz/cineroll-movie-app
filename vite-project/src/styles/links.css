@@ -1,0 +1,22 @@
+.page-links {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+.social-link {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.social-link:first-child {
+  transform: translateY(-1px);
+}
+
+.social-link img {
+  height: 24px;
+  z-index: -1;
+}

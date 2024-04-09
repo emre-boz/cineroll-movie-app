@@ -1,0 +1,180 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: #021927;
+  z-index: 1500;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  color: #fff;
+}
+
+.logo-area {
+  cursor: pointer;
+}
+
+.logo-area-icon {
+  height: 36px;
+}
+.search-area {
+  display: flex;
+  width: 30%;
+}
+
+.search-input {
+  position: relative;
+  width: 85%;
+  height: 30px;
+}
+.search-input input {
+  height: 30px;
+  width: 100%;
+  padding-left: 20px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+}
+
+.search-results-box {
+  display: none;
+  width: 120%;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 15px);
+  padding: 0 5px;
+  color: #021927;
+  background-color: var(--secondary-color);
+  z-index: 1000000;
+  border-radius: 0 0 10px 10px;
+}
+.search-results-box.is-active {
+  display: block;
+}
+.search-results-box-item {
+  padding: 5px 2px;
+  cursor: pointer;
+  border-bottom: 0.5px solid #ccc;
+}
+
+.search-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+.search-area img {
+  width: 16px;
+  height: 16px;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 100%;
+}
+.search-button {
+  display: none;
+  width: 22px;
+  height: 22px;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+.search-button img {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+}
+.user-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 22px;
+  height: 22px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.user-icon {
+  width: 100%;
+}
+
+.user-button .tooltip {
+  position: absolute;
+  z-index: 1000;
+  top: calc(100% + 12px);
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  margin-left: -60px;
+  background-color: #555;
+  opacity: 0;
+  transition: opacity 0.3s;
+  left: 50%;
+}
+
+.user-button .tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #555;
+}
+
+.user-button:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  header nav {
+    width: 88%;
+    justify-content: space-between;
+  }
+  .search-area {
+    display: none;
+  }
+  .search-results-box {
+    top: calc(100% + 10px);
+  }
+  .search-button {
+    display: flex;
+    justify-content: center;
+    transform: translateY(11%) scale(1.05);
+  }
+  .search-area.is-active {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    background-color: #021927;
+    top: 60px;
+    z-index: 1000;
+    left: 0;
+    border-radius: 0;
+  }
+  
+}

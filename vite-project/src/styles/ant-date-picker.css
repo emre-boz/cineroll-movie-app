@@ -1,0 +1,22 @@
+.ant-date-pickers-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.ant-date-pickers-item-text {
+  display: inline-block;
+  width: 50px;
+}
+
+.ant-date-picker {
+  width: 180px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.popup-position-top .ant-picker-dropdown {
+  top: auto !important;
+  bottom: 100%;
+}
+
