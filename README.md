@@ -24,3 +24,6 @@
     - react-router-dom
     - react-device-detect
 
+
+- View in [Netlify](https://cinerolla.netlify.app) 
+
