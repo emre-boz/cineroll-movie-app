@@ -26,5 +26,5 @@
 
 
 - View in [Netlify](https://cinerolla.netlify.app) 
-- View Live Site: [CineRolla](https://cinerolla.netlify.app) 
+- View Live Site: [CineRolla](https://cinerolla.com) 
 
