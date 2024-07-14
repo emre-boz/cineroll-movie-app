@@ -196,7 +196,7 @@ function Person() {
             <h3>Gender</h3>
             <span>{genderToEnglish(person.gender)}</span>
             <h3>Birthday</h3>
-            <span>{formatDate(person.birthday)} </span>
+            <span>{person.birthday ? formatDate(person.birthday) : "-"} </span>
             <span>
               {person.deathday == null
                 ? `(${calculateAge(person.birthday)} years old)`
